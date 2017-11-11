@@ -36,8 +36,8 @@
                 <!-- Header Part-->
 <header id="mov-1">   
     <div class="container-fluid">
-        <nav class="navbar navbar-default">
         <div class="container">
+                    <nav class="navbar navbar-default">
             <div class="navbar-header"><a href="#" class="navbar-brand navbar-link"><span class="text-title">Mallaiya Projects</span></a>
                 <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                 </button>
@@ -49,7 +49,7 @@
                 <li><a href="#mov-3">Contact me</a></li>
             </ul>
         </div>
-</nav>
+            </nav>
     <section class="container">
         <div class="row">
             <div class="col-lg-6 text-center bold">
@@ -61,6 +61,7 @@
             </div>
         </div>
     </section>
+    </div>
     </div>
 </header>
                 <!-- Area of interest -->  
@@ -180,38 +181,43 @@
     </div>
 </aside> 
                                 <!--My Porject Part-->
-<section class="projects" id="mov-2">
+<section class="projects container-fluid" id="mov-2">
+    <div class="container">
+        <div class="row">
     <h1 class="text-center text-uppercase">My Projects</h1>
     <p class="text-center project-para">These are the projects done by me and uploaded in online github repository see my codes and have some funs</p>
-    <div class="container project-container">
-        <div class="row">
+    </div>
+    </div>
+       
+    <div class="container">
+     <div class="row">
             <div class="col-md-4">
-                <div class="container col-md-12 set-box-width">
+                <div class="col-md-12 set-box-width">
                     <h2 class="text-center text-upper">Github Project Codes</h2>
                     <p class="text-center">Click the below link to see the projects source codes that I have done</p>
                     <img src="./assets/img/github.png" alt="Github" class="center-block" style="width: 100px;" >
                     <div>
-                        <a href="soon.html" target="_blank"><button class="btn center-block" ><span>See now</span></button></a> 
+                        <button class="btn center-block" data-toggle="modal" data-target="#myModal1" ><span>See now</span></button> 
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="container col-md-12 set-box-width">
+                <div class="col-md-12 set-box-width">
                     <h2 class="text-center text-upper">Github Project Links</h2>
                     <p class="text-center">Click the below link to see the web development projects that I have done</p>
                     <img src="./assets/img/github.png" alt="Github" class="center-block" style="width: 100px;" >
                     <div>
-                        <a href="soon.html" target="_blank"><button class="btn center-block" ><span>See now</span></button></a> 
+                        <button class="btn center-block" data-toggle="modal" data-target="#myModal2"><span>See now</span></button>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="container col-md-12 set-box-width">
+                <div class="col-md-12 set-box-width">
                     <h2 class="text-center text-upper">Other Project links</h2>
-                    <p class="text-center">Click the below link to see other projects like Mobile app</p>
+                    <p class="text-center">Click the below link to see the other projects like Mobile application,etc.,.</p>
                     <img src="./assets/img/github.png" alt="Github" class="center-block" style="width: 100px;" >
                     <div>
-                        <a href="soon.html" target="_blank"><button class="btn center-block" ><span>See now</span></button></a> 
+                        <button class="btn center-block" data-toggle="modal" data-target="#myModal3"><span>See now</span></button>
                     </div>
                 </div>
             </div>
@@ -275,5 +281,64 @@
 				}); 
 			});
 			</script>
+    <!-- Popup Updater-->
+     <div class="modal fade" id="myModal1" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title text-uppercase text-center">Source Codes links</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container">
+                                    <ol>
+                                        <li>Mallaiya Official Page -> Code<a href="https://github.com/Mallaiya/mallaiya.github.io" target="_blank"> [ https://github.com/Mallaiya/mallaiya.github.io]</a><span class="badge"> HTML </span><span class="badge">CSS </span></li>
+                                        <li>Mallaiya Project Board -> Code<a href="https://github.com/Mallaiya/projects" target="_blank"> [ https://github.com/Mallaiya/projects ]</a><span class="badge"> HTML </span><span class="badge">CSS </span><span class="badge">BOOTSTRAP</span></li>
+                                    </ol>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+          <div class="modal fade" id="myModal2" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title text-center text-uppercase">Web Development Link</h4>
+                                </div>
+                                <div class="modal-body">
+                                   <div class="container">
+                                    <ol>
+                                        <li>Mallaiya Official Page<a href="https://mallaiya.github.io" target="_blank"> [ https://mallaiya.github.io ] </a><span class="badge"> HTML </span><span class="badge">CSS </span> </li>
+                                        <li>Mallaiya Project Board<a href="https://mallaiya.github.io/projects" target="_blank"> [ https://mallaiya.github.io/projects ] </a><span class="badge"> HTML </span><span class="badge">CSS </span><span class="badge">BOOTSTRAP</span></li>
+                                    </ol>
+                                </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+    <div class="modal fade" id="myModal3" role="dialog">
+                            <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  <h4 class="modal-title text-center text-uppercase" >Application Link</h4>
+                                </div>
+                                <div class="modal-body">
+                                <h4 class="text-center text-uppercase">Will be soon..</h4>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-default btn-padding" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
 </body>
 </html>
