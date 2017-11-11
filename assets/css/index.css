@@ -140,14 +140,14 @@ span.icon-bar {
         margin-top: 5%;
     }
     .navbar-link{
-        font-size: 18px !important;
+        font-size: 16px !important;
     }  
     .navbar-nav li{
         margin-left:10px;
     }
     .col-lg-6.bold h1{
         margin-top: 10%;
-        font-size: 2.5em;
+        font-size: 1.5em;
     }   
     .col-lg-6.bold p{
         margin-top: 15%;
@@ -294,6 +294,7 @@ blockquote{
 }
 blockquote p{ 
     font-weight: bold;
+    margin-top: 5%;
 }
 blockquote small{
     font-weight: bold;
@@ -312,9 +313,17 @@ i.fa-quote-left{
     blockquote small{
         text-align: center !important;
     }
+    h1.moto-head{
+        font-size: 2em;
+    }
+    blockquote p{
+            font-size: 0.8em !important;
+    }
+
 }
 
                         /*My Porject Part*/
+
 section.projects{
     background: #009aff !important;
     height: auto;
@@ -344,8 +353,8 @@ p.project-para{
 .set-box-width h2{
     font-weight: bold;
     color: #009aff;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .set-box-width p{
     font-weight: bold;
@@ -362,12 +371,27 @@ p.project-para{
     padding: 10px 20px;
     background: #ffffff !important;
     font-weight: bold;
+    margin-bottom: 10%;
 }
+
 .set-box-width button:hover{
     color: #ffffff !important;
     border: 2px solid #162431!important;
     background: #162431!important;
 }
+
+@media (max-width:767px){
+    .projects h1{
+        font-size: 2em;
+    }
+    p.project-para{
+        font-size: 1em;
+    }
+    .set-box-width h2{
+        font-size: 1.6em;
+    }
+}
+
                         /*Contact Box*/
 section.contact-box{
     height: auto;
@@ -420,7 +444,7 @@ h1.communication-heading{
         width:80%;
     }   
     img.contact-img{
-        width: 100px;
+        width: 150px;
     }
 }
                         /*Footer Part*/
@@ -469,29 +493,3 @@ h1.communication-heading{
     opacity:1;filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
